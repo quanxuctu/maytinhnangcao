@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advance Calculator</title>
+</head>
+<style>
+    div#calculator {
+        border: 1px solid black;
+        width: 173px;
+        padding: 3px;
+        background-color: #00BCD4;
+        border-radius: 30px;
+    }
+
+    button {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 3px;
+    }
+
+    input#screen {
+        width: 166px;
+        height: 40px;
+        margin-bottom: 5px;
+        font-size: 25px;
+        text-align: right;
+        background-color: darkgray;
+        color: white;
+    }
+    button#zero {
+        width: 84px;
+    }
+</style>
+<body>
+<div id="calculator">
+    <input id="screen">
+    <br>
+    <button onclick="clearScreen()">C</button>
+    <button onclick="del()">del</button>
+    <button id="three">%</button>
+    <button id="add" onclick="clickNumber('/')">/</button>
+    <br>
+    <button onclick="clickNumber(7)">7</button>
+    <button onclick="clickNumber(8)">8</button>
+    <button onclick="clickNumber(9)">9</button>
+    <button onclick="clickNumber('*')">x</button>
+    <br>
+    <button onclick="clickNumber(4)">4</button>
+    <button onclick="clickNumber(5)">5</button>
+    <button onclick="clickNumber(6)">6</button>
+    <button onclick="clickNumber('-')">-</button>
+    <br>
+    <button onclick="clickNumber(1)">1</button>
+    <button onclick="clickNumber(2)">2</button>
+    <button onclick="clickNumber(3)">3</button>
+    <button onclick="clickNumber('+')">+</button>
+    <br>
+    <button id="zero" onclick="clickNumber(0)">0</button>
+    <button onclick="clickNumber('.')">.</button>
+    <button onclick="calculate()">=</button>
+</div>
+</body>
+<script src="maytinhnangcao.js"></script>
+</html>
